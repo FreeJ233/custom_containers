@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - build
-
-  workflow_dispatch:
+    paths:   # 这里是用来指定哪个文件更改，才会触发的
+      - './ci/version.txt'
 
 jobs:
   build:
