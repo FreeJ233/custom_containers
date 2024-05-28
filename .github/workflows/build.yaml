@@ -2,8 +2,8 @@ name: Build Image
 
 on:
   push:
-    paths:   # 这里是用来指定哪个文件更改，才会触发的
-      - './ci/version.txt'
+    branches:
+      - build
 
 jobs:
   build:
